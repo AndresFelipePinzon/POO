@@ -1,4 +1,4 @@
-package co.alejo.dominio;
+package poo.banco.dominio;
 
 public class CuentaBancaria {
     // Atributos

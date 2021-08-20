@@ -1,6 +1,6 @@
-package co.alejo.app;
+package poo.tv.app;
 
-import co.alejo.dominio.Televisor;
+import poo.tv.dominio.Televisor;
 
 public class AppTV {
     public static void main(String[] args) {

@@ -1,6 +1,6 @@
-package co.quiz.app;
+package poo.quiz.app;
 
-import co.quiz.dominio.DispensadorDeGel;
+import poo.quiz.dominio.DispensadorDeGel;
 
 public class AppGel {
     public static void main(String[] args) {

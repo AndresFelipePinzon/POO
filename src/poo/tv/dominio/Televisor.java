@@ -1,4 +1,4 @@
-package co.alejo.dominio;
+package poo.tv.dominio;
 
 public class Televisor {
     public short tamano;

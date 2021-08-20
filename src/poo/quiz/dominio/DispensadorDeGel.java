@@ -1,4 +1,4 @@
-package co.quiz.dominio;
+package poo.quiz.dominio;
 
 public class DispensadorDeGel {
     public String marca;

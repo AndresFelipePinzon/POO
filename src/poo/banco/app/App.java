@@ -1,8 +1,8 @@
-package co.alejo.app;
+package poo.banco.app;
 
-import co.alejo.dominio.Banco;
-import co.alejo.dominio.CuentaBancaria;
-import co.alejo.dominio.Persona;
+import poo.banco.dominio.Banco;
+import poo.banco.dominio.CuentaBancaria;
+import poo.banco.dominio.Persona;
 
 public class App {
     public static void main(String[] args) {

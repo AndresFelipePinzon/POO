@@ -1,6 +1,6 @@
-package co.alejo.app;
+package poo.banco.app;
 
-import co.alejo.dominio.Persona;
+import poo.banco.dominio.Persona;
 
 public class AppMemoria {
     public static void main(String[] args) {
