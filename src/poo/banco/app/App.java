@@ -12,7 +12,6 @@ public class App {
         Persona lema = new Persona("Lema", 321);
 
         CuentaBancaria cuentaAlejo = new CuentaBancaria(111, "Ahorro", 100000, alejandro, bancolombia);
-
         CuentaBancaria cuentaLema = new CuentaBancaria(222, "Ahorro", lema, bancolombia);
 
         System.out.println("Antes de la consignación");

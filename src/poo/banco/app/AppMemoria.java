@@ -2,6 +2,8 @@ package poo.banco.app;
 
 import poo.banco.dominio.Persona;
 
+import java.time.LocalDateTime;
+
 public class AppMemoria {
     public static void main(String[] args) {
         Persona persona = null;
@@ -9,7 +11,7 @@ public class AppMemoria {
         System.out.println("Memoria libre ANTES del proceso: " + Runtime.getRuntime().freeMemory() / 1024);
 
         for (int i = 0; i < 99999999; i++) {
-            persona = new Persona("Alejandro Ramírez Hernández", (short) 28, 32456885);
+            persona = new Persona("Alejandro Ramírez Hernández", 32456885, LocalDateTime.of(1950, 8, 10, 0, 0, 0));
             persona = null;
         }
 

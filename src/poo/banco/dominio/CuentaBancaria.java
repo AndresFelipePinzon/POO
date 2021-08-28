@@ -2,12 +2,12 @@ package poo.banco.dominio;
 
 public class CuentaBancaria {
     // Atributos
-    public int numero;
-    public String tipoCuenta;
-    public long saldo;
-    public Persona propietario;
-    public Banco banco;
-    public boolean activa;
+    private int numero;
+    private String tipoCuenta;
+    private long saldo;
+    private Persona propietario;
+    private Banco banco;
+    private boolean activa;
 
     public CuentaBancaria(int numero, String tipoCuenta, Persona propietario, Banco banco) {
         this.numero = numero;
@@ -69,5 +69,29 @@ public class CuentaBancaria {
 
     public void mostrarSaldo() {
         System.out.println("El saldo de la cuenta " + numero + " es: $" + saldo);
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public String getTipoCuenta() {
+        return tipoCuenta;
+    }
+
+    public long getSaldo() {
+        return saldo;
+    }
+
+    public Persona getPropietario() {
+        return propietario;
+    }
+
+    public Banco getBanco() {
+        return banco;
+    }
+
+    public boolean isActiva() {
+        return activa;
     }
 }
