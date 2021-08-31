@@ -4,6 +4,7 @@ import poo.hotel.dominio.Habitacion;
 import poo.hotel.dominio.Hotel;
 
 import java.util.Arrays;
+import java.util.List;
 
 public class AppHotel {
     public static void main(String[] args) {
@@ -18,6 +19,15 @@ public class AppHotel {
         hotel.getHabitaciones().add(habitacion2);
         hotel.getHabitaciones().add(habitacion3);
         hotel.getHabitaciones().add(habitacion4);
+
+        // Buscar una habitación por numero
+        Habitacion habitacionAEncontrar = hotel.getHabitacionPorNumeroFuncional(1001);
+        System.out.println("Se encontró la habitación " + habitacionAEncontrar.getNumero() + ", en el piso " + habitacionAEncontrar.getPiso());
+
+        // Buscar las habitaciones de un piso
+        List<Habitacion> habitacionesDecimoPiso = hotel.getHabitacionesPorPisoFuncional(20);
+        System.out.println("Habitaciones en el decimo piso: " + habitacionesDecimoPiso.size());
+
 //        hotel.setHabitaciones(Arrays.asList(habitacion1, habitacion2, habitacion3, habitacion4));
 
         // For each funcional
@@ -25,12 +35,8 @@ public class AppHotel {
             System.out.println("Numero de la habitación " + ha.getNumero() + " y piso "  + ha.getPiso() + ", tamaño: " + ha.getTamano());
         });
 
-        hotel.getHabitaciones().remove(2);
-        hotel.getHabitaciones().remove(habitacion4);
-
-        hotel.getHabitaciones().forEach(ha -> {
-            System.out.println("Numero de la habitación " + ha.getNumero() + " y piso "  + ha.getPiso() + ", tamaño: " + ha.getTamano());
-        });
+//        hotel.getHabitaciones().remove(2);
+//        hotel.getHabitaciones().remove(habitacion4);
 
 //        // For viejo
 //        for(int i = 0; i < hotel.getHabitaciones().size(); i++) {
