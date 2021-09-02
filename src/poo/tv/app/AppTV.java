@@ -4,7 +4,7 @@ import poo.tv.dominio.Televisor;
 
 public class AppTV {
     public static void main(String[] args) {
-        Televisor tv = new Televisor("LG", "Kepler 1.5", (short) 50);
+        Televisor tv = new Televisor("LG", " 3.0", (short) 50);
         System.out.println("Marca es " + tv.marca);
 
         tv.subirVolumen();

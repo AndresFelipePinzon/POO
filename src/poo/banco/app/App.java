@@ -7,7 +7,6 @@ import poo.banco.dominio.Persona;
 public class App {
     public static void main(String[] args) {
         Banco bancolombia = new Banco("Bancolombia");
-
         Persona alejandro = new Persona("Alejandro", 124);
         Persona lema = new Persona("Lema", 321);
 
