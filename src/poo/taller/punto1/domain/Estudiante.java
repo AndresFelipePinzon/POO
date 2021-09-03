@@ -19,30 +19,37 @@ public class Estudiante {
     }
 
     public String getIdentificacion() {
+
         return identificacion;
     }
 
     public String getNombre() {
+
         return nombre;
     }
 
     public int getSemestreActual() {
+
         return semestreActual;
     }
 
     public char getGenero() {
+
         return genero;
     }
 
     public Nota getNota() {
+
         return nota;
     }
 
     public void setGenero(char genero) {
+
         this.genero = genero;
     }
 
     public void setNota(Nota nota) {
+
         this.nota = nota;
     }
 }

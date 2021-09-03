@@ -9,6 +9,7 @@ public class Asignatura {
     private Docente docente;
     private List<Estudiante> estudiantes;
 
+
     public Asignatura(String nombre, Docente docente) {
         this.nombre = nombre;
         this.docente = docente;

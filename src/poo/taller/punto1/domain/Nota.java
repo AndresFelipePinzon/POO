@@ -9,6 +9,7 @@ public class Nota {
     private Asignatura materia;
 
     public Nota(Asignatura materia) {
+
         this.materia = materia;
     }
 
@@ -27,30 +28,37 @@ public class Nota {
     }
 
     public double getNotaParcial() {
+
         return notaParcial;
     }
 
     public double getNotaFinal() {
+
         return notaFinal;
     }
 
     public List<Double> getNotasSeguimiento() {
+
         return notasSeguimiento;
     }
 
     public Asignatura getMateria() {
+
         return materia;
     }
 
     public void setNotaParcial(double notaParcial) {
+
         this.notaParcial = notaParcial;
     }
 
     public void setNotaFinal(double notaFinal) {
+
         this.notaFinal = notaFinal;
     }
 
     public void setNotasSeguimiento(List<Double> notasSeguimiento) {
+
         this.notasSeguimiento = notasSeguimiento;
     }
 }
