@@ -5,9 +5,9 @@ import java.util.Objects;
 public class Contacto {
     private String nombres;
     private String apellidos;
-    private int numero;
+    private String numero;
 
-    public Contacto(String nombres, String apellidos, int numero) {
+    public Contacto(String nombres, String apellidos, String numero) {
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.numero = numero;
@@ -16,7 +16,6 @@ public class Contacto {
     public Contacto(String nombres, String apellidos) {
         this.nombres = nombres;
         this.apellidos = apellidos;
-        this.numero =0; //inicie en cero
     }
 
     public String getNombres() {
@@ -35,12 +34,18 @@ public class Contacto {
         this.apellidos = apellidos;
     }
 
-    public int getNumero() {
+    public String getNumero() {
         return numero;
     }
 
-    public void setNumero(int numero) {
+    public void setNumero(String numero) {
         this.numero = numero;
     }
 
+
+    //Metodo para verificar cuando el nombre sea igual
+    public boolean nombreIgual(Contacto c) {
+
+        return this.nombres.equalsIgnoreCase(c.getNombres());
+    }
 }
